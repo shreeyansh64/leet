@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:leet/view/chart.dart';
 
@@ -27,7 +26,7 @@ class _SolvedPageState extends State<SolvedPage> {
           ),
         ),
       ),
-      body: Chart(), 
+      body: Chart(),
     );
   }
 }

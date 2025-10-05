@@ -39,9 +39,10 @@ class _ChartState extends State<Chart> {
           legend: Legend(
             isVisible: true,
             position: LegendPosition.bottom,
-            textStyle: TextStyle(color: Colors.black,fontSize: 20),
+            textStyle: TextStyle(color: Colors.black, fontSize: 20),
             orientation: LegendItemOrientation.vertical,
-            iconHeight: 20,iconWidth: 40
+            iconHeight: 20,
+            iconWidth: 40,
           ),
         ),
       ),

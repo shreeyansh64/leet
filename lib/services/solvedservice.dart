@@ -10,8 +10,6 @@ class SolvedService extends StatefulWidget {
 class _SolvedServiceState extends State<SolvedService> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-
-    );
+    return Scaffold();
   }
 }

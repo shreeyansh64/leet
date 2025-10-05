@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:leet/view/badgespage.dart';
 import 'package:leet/view/contestpage.dart';
@@ -14,7 +13,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: MainPage());
+    return MaterialApp(debugShowCheckedModeBanner: false, home: MainPage());
   }
 }
 
@@ -26,22 +25,20 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-
   int _currentIndex = 0;
 
   final List<Widget> _pages = [
     ProfilePage(),
     BadgesPage(),
     ContestPage(),
-    SolvedPage()
+    SolvedPage(),
   ];
-
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: _pages[_currentIndex],
-      
+
       bottomNavigationBar: NavigationBarTheme(
         data: NavigationBarThemeData(
           backgroundColor: Colors.white,
@@ -55,11 +52,28 @@ class _MainPageState extends State<MainPage> {
             });
           },
           destinations: [
-          NavigationDestination(icon: Icon(Icons.person_2_outlined,color: Colors.black,), label: "Profile",selectedIcon: Icon(Icons.person_2_rounded),),
-          NavigationDestination(icon: Icon(Icons.emoji_events_outlined,color: Colors.black,), label: "Badges",selectedIcon: Icon(Icons.emoji_events),),
-          NavigationDestination(icon: Icon(Icons.timeline_outlined,color: Colors.black,), label: "Contest",selectedIcon: Icon(Icons.timeline_rounded),),
-          NavigationDestination(icon: Icon(Icons.task_outlined,color: Colors.black,), label: "Solved",selectedIcon: Icon(Icons.task),)
-        ]),
+            NavigationDestination(
+              icon: Icon(Icons.person_2_outlined, color: Colors.black),
+              label: "Profile",
+              selectedIcon: Icon(Icons.person_2_rounded),
+            ),
+            NavigationDestination(
+              icon: Icon(Icons.emoji_events_outlined, color: Colors.black),
+              label: "Badges",
+              selectedIcon: Icon(Icons.emoji_events),
+            ),
+            NavigationDestination(
+              icon: Icon(Icons.timeline_outlined, color: Colors.black),
+              label: "Contest",
+              selectedIcon: Icon(Icons.timeline_rounded),
+            ),
+            NavigationDestination(
+              icon: Icon(Icons.task_outlined, color: Colors.black),
+              label: "Solved",
+              selectedIcon: Icon(Icons.task),
+            ),
+          ],
+        ),
       ),
     );
   }
