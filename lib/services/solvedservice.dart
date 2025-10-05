@@ -14,7 +14,4 @@ class _SolvedServiceState extends State<SolvedService> {
 
     );
   }
-  void fetch()async{
-    const url = "";
-  }
 }

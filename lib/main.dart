@@ -1,8 +1,8 @@
-import 'package:flutter/foundation.dart';
+
 import 'package:flutter/material.dart';
 import 'package:leet/view/badgespage.dart';
 import 'package:leet/view/contestpage.dart';
-import 'package:leet/view/profilePage.dart';
+import 'package:leet/view/profilepage.dart';
 import 'package:leet/view/solvedpage.dart';
 
 void main() {

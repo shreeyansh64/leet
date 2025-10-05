@@ -1,8 +1,10 @@
+// ignore_for_file: file_names
+
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:shared_preferences/shared_preferences.dart';
+
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({super.key});
@@ -111,7 +113,7 @@ class _ProfilePageState extends State<ProfilePage> {
   }
 
   void fetch() async {
-    print("Button clicked");
+    // print("Button clicked");
     setState(() {
       isLoading = true;
     });
@@ -127,6 +129,6 @@ class _ProfilePageState extends State<ProfilePage> {
       isLoading = false;
     });
 
-    print(data);
+    // print(data);
   }
 }
