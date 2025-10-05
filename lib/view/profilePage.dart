@@ -15,10 +15,12 @@ class _ProfilePageState extends State<ProfilePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
+        backgroundColor: Colors.white,
         title: Center(
           child: Text(
-            "PROFILE PAGE",
+            "PROFILE",
             style: TextStyle(
               color: Colors.black,
               letterSpacing: 5,
@@ -57,7 +59,7 @@ class _ProfilePageState extends State<ProfilePage> {
 
   void fetch()async{
     print("Button clicked");
-    final url = "https://alfa-leetcode-api.onrender.com/cpcs";
+    final url = "http://192.168.1.12/cpcs";
     final uri = Uri.parse(url);
     final res = await http.get(uri);
     final body = res.body;
