@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:leet/view/badgespage.dart';
 import 'package:leet/view/contestpage.dart';
+import 'package:leet/view/inputpage.dart';
 import 'package:leet/view/profilepage.dart';
 import 'package:leet/view/solvedpage.dart';
 
@@ -28,6 +29,7 @@ class _MainPageState extends State<MainPage> {
   int _currentIndex = 0;
 
   final List<Widget> _pages = [
+    InputPage(),
     ProfilePage(),
     BadgesPage(),
     ContestPage(),
@@ -52,6 +54,11 @@ class _MainPageState extends State<MainPage> {
             });
           },
           destinations: [
+            NavigationDestination(
+              icon: Icon(Icons.send_outlined, color: Colors.black),
+              label: "Search",
+              selectedIcon: Icon(Icons.send),
+            ),
             NavigationDestination(
               icon: Icon(Icons.person_2_outlined, color: Colors.black),
               label: "Profile",

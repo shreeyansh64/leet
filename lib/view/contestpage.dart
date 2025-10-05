@@ -10,21 +10,6 @@ class ContestPage extends StatefulWidget {
 class _ContestPageState extends State<ContestPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.white,
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        title: Center(
-          child: Text(
-            "CONTEST HISTORY",
-            style: TextStyle(
-              color: Colors.black,
-              letterSpacing: 5,
-              fontWeight: FontWeight.w900,
-            ),
-          ),
-        ),
-      ),
-    );
+    return Scaffold();
   }
 }
