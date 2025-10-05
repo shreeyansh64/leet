@@ -18,6 +18,7 @@ class _ChartState extends State<Chart> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Padding(
         padding: EdgeInsetsGeometry.all(16),
         child: SfCircularChart(
