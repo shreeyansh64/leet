@@ -30,6 +30,7 @@ class _ProfilePageState extends State<ProfilePage> {
     setState(() => isLoading = true);
     ProfileService profileservice = ProfileService();
     Profile? fetchedUser = await profileservice.fetchProfile(username);
+    if(!mounted) return;
     setState(() {
       profile = fetchedUser;
       isLoading = false;
